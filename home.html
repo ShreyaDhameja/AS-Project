@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noble Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #09294c;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 24px;
+            position: relative;
+            text-align: center;
+        }
+
+        .header-links {
+            background-color: #666;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .logo img {
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+        .navigation, .header-links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation li, .header-links ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navigation li a, .header-links ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero {
+            color: #000000;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .about, .services, .testimonials, .booking, .contact, .emergency, .footer {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        .btn-primary, .btn-secondary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-secondary {
+            background-color: #007bff;
+        }
+
+        footer {
+            background-color: #09294c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Main Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="noble.jpg" alt="Noble Hospital Logo">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="index.html">Register</a></li>
+                    <li><a  href="index.html">Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Appointment Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Noble Hospital</h1>
+            <p>Providing compassionate care for you and your family</p>
+            <p>Ready to schedule your visit? Book your appointment online now!</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone Number">
+            </form>
+            <a href="appointment.html" class="btn-primary">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Noble Hospital is committed to delivering high-quality healthcare services with compassion and integrity. Our dedicated team of healthcare professionals strives to provide personalized care to every patient.</p>
+            <div class="milestones">
+                <h3>Our Milestones</h3>
+                <ul>
+                    <li>Accredited by the Joint Commission</li>
+                    <li>Recipient of the Patient Safety Excellence Award</li>
+                    <li>Ranked among the top hospitals in patient satisfaction</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cardiology</li>
+                <li>Orthopedics</li>
+                <li>Oncology</li>
+                <li>Neurology</li>
+                <li>Maternity Services</li>
+                <li>Emergency Care</li>
+            </ul>
+            <a href="service.html" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+                <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                <li><strong>Email:</strong> info@noblehospital.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Emergency Information Section -->
+    <section id="emergency" class="emergency">
+        <div class="container">
+            <h2>Emergency Information</h2>
+            <p>In case of emergency, please dial 911 or visit our Emergency Department immediately.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            &copy; 2010 Noble Hospital | All Rights Reserved
+        </footer>
+    </footer>
+
+</body>
+</html>

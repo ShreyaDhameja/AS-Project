@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noble Hospital Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Background color for the entire page */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #09294c; /* Color for the header */
+            color: #fff;
+            padding: 10px 0;
+            font-size: 24px;
+            position: relative;
+            text-align: center;
+        }
+
+        .logo img {
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+        footer {
+            background-color: #09294c; /* Color for the footer */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .confirmation-message {
+    color: #000000;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: center;
+    margin-bottom: 20px; /* Add some margin below the message */
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="noble.jpg" alt="Noble Hospital Logo">
+            </div>
+            <h1>Appointment Confirmation</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="confirmation-message">
+            <p>Your appointment has been confirmed at Noble Hospital.</p>
+        </div>
+        <h2>Appointment Details</h2>
+        <!-- HTML Elements to display appointment details and confirmation message -->
+        <div id="appointmentDetails"></div>
+    </div>
+
+    <footer>
+        &copy; 2024 Noble Hospital | All Rights Reserved
+    </footer>
+
+    <script>
+        // Function to retrieve query parameters from URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Retrieve appointment details from query parameters
+        var patientName = getQueryParameter('patient_name');
+        var email = getQueryParameter('email');
+        var phoneNumber = getQueryParameter('phone');
+        var appointmentDate = getQueryParameter('appointment_date');
+        var department = getQueryParameter('department');
+
+        // Display appointment details on the page
+        var appointmentDetailsDiv = document.getElementById('appointmentDetails');
+        appointmentDetailsDiv.innerHTML = `
+            <p><strong>Patient Name:</strong> ${patientName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+            <p><strong>Appointment Date:</strong> ${appointmentDate}</p>
+            <p><strong>Department:</strong> ${department}</p>
+        `;
+    </script>
+</body>
+</html>
