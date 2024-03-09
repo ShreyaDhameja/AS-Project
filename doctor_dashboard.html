@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #09294c;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #09294c;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        main {
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #09294c;
+            color: #fff;
+            text-align: center;
+            padding: 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="noble.jpg" alt="Noble Hospital Logo">
+        </div>
+        <h1 class="text-center">Doctor Dashboard</h1>
+    </header>
+    <nav>
+<a href="doctor_homepage.html">Home</a>
+<a href="doctor_appointments.html">Appointments</a>
+<a href="doctor_schedule.html">Schedule</a>
+<a href="index.html">Log out</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Upcoming Appointments</h2>
+            <ul> 
+                <li>2024-03-10 - John Doe</li>
+                <li>2024-03-12 - Jane Smith</li>
+                <li>2024-03-15 - Sarah Johnson</li>
+            </ul>
+            
+            <h2>Patient Lists</h2>
+            <ul>
+                <li>John Doe </li>
+                <li>Jane Smith</li>
+                <li>Alice Johnson</li>
+            </ul>
+
+            <h2>Recent Patient Records</h2>
+            <ul>
+                <li>John Doe - 2024-03-09</li>
+                <li>Jane Smith - 2024-03-08</li>
+                <li>Alice Johnson - 2024-03-07</li>
+            </ul>
+
+            <h2>Hospital Announcements</h2>
+            <p>Please be advised that the hospital will be closed on March 15th due to maintenance.
+                Blood donation drive on March 20th from 9:00 AM to 3:00 PM.</p>
+
+            <h2>Urgent Messages</h2>
+            <ul>
+                <li>Review lab results for patient John Doe.</li>
+                <li>Reminder: Staff meeting tomorrow at 10:00 AM.</li>
+                <li>Emergency surgery scheduled for patient Jane Smith.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Noble Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
